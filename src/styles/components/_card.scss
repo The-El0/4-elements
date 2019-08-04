@@ -1,6 +1,57 @@
+//
+//  Components
+//
 .card {
-  padding: 1rem;
+  &__symbol {
+    //padding: 3rem;
+  }
 
-  background: $grey-30;
-  border-radius: calc(1rem / 2);
+
+  &__name {
+    padding-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+
+
+
+.card {
+  //...
+
+
+  &__front,
+  &__back {
+    height: 100%;
+
+    border: 1px solid $black;
+    border-radius: calc(1rem / 2);
+
+    cursor: pointer;
+  }
+
+
+  &__front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4rem;
+    color: $grey-70;
+
+    background: $black;
+
+    @include transition();
+    &:hover {
+      font-size: 5rem;
+      color: $grey-50;
+    }
+  }
+
+
+  &__back {
+    padding: 2rem;
+    background: $white;
+  }
 }

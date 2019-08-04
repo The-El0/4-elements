@@ -1,0 +1,17 @@
+/*
+
+
+usage
+-----
+
+.element {
+  @include transition();
+}
+
+
+*/
+
+
+@mixin transition() {
+  transition: all 120ms ease-in-out;
+}

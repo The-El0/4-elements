@@ -7,7 +7,18 @@
 
 
 
+//
+//  Mixins
+//
+@import "mixins/transition";
+@import "mixins/push--auto";
+
+
+
+
+//
 // App layout
+//
 @import "project/layout";
 @import "project/ui";
 

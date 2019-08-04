@@ -1,0 +1,20 @@
+/*
+
+
+usage
+-----
+
+.element {
+  @include push--auto();
+}
+
+
+*/
+
+
+@mixin push--auto() {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
