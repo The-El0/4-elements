@@ -2,15 +2,31 @@
   background: $grey-10;
 
   > header {
+    padding: 1rem;
+    padding-top: 2rem;
+
+    text-align: center;
     background: $grey-20;
   }
 
   > main {
     //background: $white;
-    padding: 4rem;
+    padding: 1rem;
   }
 
   > footer {
     background: $grey-20;
   }
+}
+
+
+
+//
+//  Components
+//
+.logo {
+  margin: 0;
+
+  font-family: $font--logo;
+  line-height: 1;
 }

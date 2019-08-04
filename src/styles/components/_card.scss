@@ -18,7 +18,7 @@
 
 
 .card {
-  //...
+  cursor: pointer;
 
 
   &__front,
@@ -27,8 +27,6 @@
 
     border: 1px solid $black;
     border-radius: calc(1rem / 2);
-
-    cursor: pointer;
   }
 
 
@@ -54,4 +52,13 @@
     padding: 2rem;
     background: $white;
   }
+}
+
+
+
+//
+//  States
+//
+.card {
+  &[disabled] { cursor: default; }
 }
