@@ -53,9 +53,6 @@
     background: $white;
 
     @include transition();
-    &:hover {
-      border-width: 2px;
-    }
   }
 }
 
@@ -65,5 +62,17 @@
 //  States
 //
 .card {
-  &[disabled] { cursor: default; }
+
+  // clickable card
+  //
+  &:not([disabled]) {
+    .card__back:hover { border-width: 3px; }
+  }
+
+  // disabled card
+  //
+  &[disabled] {
+    opacity: .5;
+    cursor: default;
+  }
 }
