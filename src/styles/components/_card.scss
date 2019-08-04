@@ -51,6 +51,11 @@
   &__back {
     padding: 2rem;
     background: $white;
+
+    @include transition();
+    &:hover {
+      border-width: 2px;
+    }
   }
 }
 
