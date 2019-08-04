@@ -1,11 +1,11 @@
 {
-  "name": "@the-el0/blueprint",
+  "name": "@the-el0/4-elements",
   "version": "0.0.0",
-  "description": "blueprint",
+  "description": "4-elements",
   "author": "the-el0@protonmail.com",
   "repository": {
     "type": "git",
-    "url": "git@github.com:The-El0/blueprint.git"
+    "url": "git@github.com:The-El0/4-elements.git"
   },
   "private": "false",
   "engines": {
