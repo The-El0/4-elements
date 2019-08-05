@@ -1,0 +1,68 @@
+//
+//  container
+//
+.flip-card {
+  width: 100%;
+  height: 200px;        // height has to be set!
+  perspective: 1000px;    // comment this to disable 3D effect
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  //will-change: transform;
+}
+
+
+//
+//  Card (Front + Back)
+//
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+  border-radius: $radius--md;
+}
+
+
+//
+//  Card — FRONT side
+//
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+}
+
+
+//
+//  Card — BACK side
+//
+.flip-card-back {
+  background-color: $brand-alt;
+  color: $white;
+  transform: rotateY(180deg);
+}
+
+
+
+//
+//  Effect — horizontal flip
+//
+//.flip-card:not(.flipper):hover .flip-card-inner {
+//.flip-card:hover .flip-card-inner {
+.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
